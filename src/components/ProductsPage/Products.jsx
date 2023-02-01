@@ -35,7 +35,7 @@ function Products() {
   const [open, setOpen] = React.useState(false);
   const [open1, setOpen1] = React.useState(false);
   const [update, setUpdate] = React.useState({
-    id:undefined,
+    _id:undefined,
     name: "",
     price: "",
     description: "",
@@ -87,11 +87,11 @@ function Products() {
       price:item.price,
       description:item.description
     })
-    // agent.getById(BASE_URL, id).then((res) => {
-    //   console.log(res);
+    agent.getByPut(BASE_URL, id,update).then((res) => {
+      console.log('resss',res);
 
 
-    // });
+    });
     // console.log(item._id);
   };
 
@@ -103,7 +103,7 @@ function Products() {
       [name]:value
   })
   };
-  console.log(update);
+  // console.log(update);
 
   return (
     <>

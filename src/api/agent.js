@@ -52,4 +52,13 @@ export const agent = {
 
     return response;
   },
+
+  getByPut:async(url,id,data)=>{
+    let response = {};
+    await axiosInstance.put(`${url}/${id}`,data)
+    .then(res=>{
+      response=res.data
+    })
+    return response
+  }
 };

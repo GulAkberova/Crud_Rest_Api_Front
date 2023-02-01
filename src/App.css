@@ -5,6 +5,7 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
 header{
   padding: 20px 40px;
   background-color: #132f08;
@@ -30,4 +31,14 @@ header ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer{
+  background-color: #132f08;
+  color: white;
+  padding: 20px 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid white;
 }
