@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+header{
+  padding: 20px 40px;
+  background-color: #132f08;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+header ul{
+  display: flex;
+}
+header ul li {
+  margin: 0px 10px;
+}
+header ul li a{
+  color: white;
+}
+.home_bigdiv{
+  height: calc(100vh - 90px);
+  background-color: #132f08;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
