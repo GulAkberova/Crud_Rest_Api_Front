@@ -30,6 +30,7 @@ export const agent = {
     if (response == null) {
       throw "404 data not found";
     }
+    return response;
   },
 
   getByPost: async (url, data) => {
@@ -42,14 +43,13 @@ export const agent = {
     return response;
   },
 
-  getByDelete:async(url,id)=>{
-    let response={}
+  getByDelete: async (url, id) => {
+    let response = {};
 
-    await axiosInstance.delete(`${url}/${id}`)
-    .then(res=>{
-        response=res.data
-    })
+    await axiosInstance.delete(`${url}/${id}`).then((res) => {
+      response = res.data;
+    });
 
-    return response
-  }
+    return response;
+  },
 };
